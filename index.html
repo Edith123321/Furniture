@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" style="position: relative; position: sticky;">
         <div class="container-fluid">
           <a class="navbar-brand ms-5 fw-bold" href="#">FURNITURE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar nav justify-content-center ms-5 ps-5 navbar-dark">
+          </div>
+          
+          <div style="position: absolute; right: 40%; ">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav" style="display: flex; flex-direction: row;" >
+            <ul class="navbar nav navbar-dark" >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link"  href="#">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">ABOUT</a>
@@ -33,16 +38,13 @@
               </li>
             </ul>
           </div>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          
         </div>
       </nav>
 
       <div class="container pt-5">
-        <div class="row align-text-center justify-content-center">
-          <div class="col-12 col-lg-7 align-text-center" >
+        <div class="row  " >
+          <div class="col-12 col-lg-7 " >
              <h1 class="display-4 fw-bold mx-5 pt-5"> Discover the best
                 <br>
                 Furniture for You
@@ -50,7 +52,7 @@
              <p class="lead mt-5 mx-5 pb-3 pt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, deleniti repellendus mollitia nam laborum quisquam.
              </p>
-             <div class="btn  px-5 py-3 d-inline-block mt-4 mx-5 border">SHOP NOW</div>
+             <div class="btn  px-5 py-3 d-inline-block mt-4 mx-5 border" style="background-color: burlywood;">SHOP NOW</div>
           </div>
           <div class="col-12 col-lg-5 ms-0" >
             <img src="cover.png" alt="Photo one" class="img-fluid rounded" id="cover" >
@@ -62,11 +64,11 @@
   <body>
     <section class="container my-5" id="skills">
         <h2 class="text-center mb-4">SERVICES WE OFFER</h2>
-        <div class="row g-3">
+        <div class="row g-1">
             <!-- Card 1 -->
             <div class="col-md-4 container-blur ">
-                <div class="card ms-5 justify-content-center" style="width: 18rem;">
-                    <img src="image.png" class="card-img-top" alt="html photo">
+                <div class="card ms-5 justify-content-center" style="justify-content: center; text-align: center;">
+                    
                     <div class="card-body">
                       <h5 class="card-title text-black">CUSTOM MENUS</h5>
                       <p class="card-text text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod.</p>
@@ -76,9 +78,9 @@
             </div>
 
             <div class="col-md-4 ">
-                <div class="card ms-5 justify-content-center" style="width: 18rem;">
-                    <img src="image copy 2.png" class="card-img-top shadow-sm" alt="html photo">
+                <div class="card ms-5 justify-content-center" style="justify-content: center; text-align: center;">
                     <div class="card-body">
+                      <img src="image copy 5.png" alt="" style="margin: 0; padding: 0;">
                       <h5 class="card-title text-black">SMARTEST WAY</h5>
                       <p class="card-text text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod.</p>
                       <a href="#" class="btn bg-transparent border">view more</a>
@@ -87,8 +89,7 @@
             </div>
             
             <div class="col-md-4 ">
-                <div class="card ms-5 justify-content-center" style="width: 18rem;">
-                    <img src="image copy 3.png" class="card-img-top" alt="html photo">
+                <div class="card ms-5 " style="justify-content: center; text-align: center;">
                     <div class="card-body">
                       <h5 class="card-title text-black">USER FRIENDLY</h5>
                       <p class="card-text text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quod.</p>
